@@ -50,4 +50,26 @@ const getRevenueForCrop = (input) => {
   return input.numCrops * input.crop.yield * input.price;
 };
 
-module.exports = { getYieldForPlant, getYieldForCrop, getTotalYield, getCostsForCrop, getRevenueForCrop };
+const getProfitForCrop = (input) => {
+
+  return (input.numCrops * input.crop.yield * input.price) - (input.numCrops * input.crop.cost);
+};
+
+const getTotalProfit = (object_veg) => {
+  
+  for (x in object_veg) {
+   
+    let sum = 0;
+    let i = 0;
+    for (i = 0; i < object_veg.crops.length; i++) {
+     
+      sum += (object_veg.crops[i].crop.yield * object_veg.crops[i].numCrops * object_veg.crops[i].price) - (object_veg.crops[i].numCrops * object_veg.crops[i].crop.cost);
+     
+    }
+    return sum;
+  }
+
+  
+};
+
+module.exports = { getYieldForPlant, getYieldForCrop, getTotalYield, getCostsForCrop, getRevenueForCrop, getProfitForCrop, getTotalProfit };
