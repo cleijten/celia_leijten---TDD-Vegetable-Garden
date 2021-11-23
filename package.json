@@ -1,0 +1,23 @@
+{
+  "name": "celia_leijten---tdd-vegetable-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleijten/celia_leijten---TDD-Vegetable-Garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleijten/celia_leijten---TDD-Vegetable-Garden/issues"
+  },
+  "homepage": "https://github.com/cleijten/celia_leijten---TDD-Vegetable-Garden#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
