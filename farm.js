@@ -40,8 +40,14 @@ const getTotalYield = (object_veg) => {
 };
 
 const getCostsForCrop = (input) => {
-  // console.log("input is", input);
+
   return input.numCrops * input.crop.cost;
 };
 
-module.exports = { getYieldForPlant, getYieldForCrop, getTotalYield, getCostsForCrop };
+
+const getRevenueForCrop = (input) => {
+
+  return input.numCrops * input.crop.yield * input.price;
+};
+
+module.exports = { getYieldForPlant, getYieldForCrop, getTotalYield, getCostsForCrop, getRevenueForCrop };
